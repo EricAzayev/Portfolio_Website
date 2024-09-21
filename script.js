@@ -42,9 +42,8 @@ document.addEventListener('DOMContentLoaded', function() {
             dropdownMenu.appendChild(a); // Append the new item to the dropdown menu
         });
 
-        // If no items match, you may choose to do something (optional)
         if (items.length === 0 && searchValue.length > 0) {
-            // Optionally, show a 'No results found' item
+            //show a 'No results found' item
             const a = document.createElement('a');
             a.className = 'dropdown-item dynamic disabled';
             a.href = '#';
@@ -57,10 +56,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
+
+
 function tkhFunction(){
     alert("redirecting you to KenKen");
     window.open('KenKen/Opening_Page.html', '_blank', 'noopener,noreferrer');
 }
+
+
 
 
 
