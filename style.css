@@ -16,8 +16,8 @@ html, body {
   color: white;
 }
 .website-content{
-  height: 8000px; /* Define the height of the container */
-  background: linear-gradient(to bottom, #0f172a, #191970); /* Example gradient background */
+  height: 8000px; /*height of container*/
+  background: linear-gradient(to bottom, #0f172a, #191970); 
   
 }
 
@@ -44,7 +44,7 @@ form{
   
   .tooltip {
     visibility: hidden;
-    width: 200px; /* Adjust as needed */
+    width: 200px; 
     background-color: #333;
     color: #fff;
     text-align: center;
@@ -52,9 +52,9 @@ form{
     border-radius: 6px;
     position: absolute;
     z-index: 1;
-    bottom: 125%; /* Position above the icon */
+    bottom: 125%; 
     left: 50%;
-    margin-left: -100px; /* Center the tooltip */
+    margin-left: -100px; 
     opacity: 0;
     transition: opacity 0.3s;
   }
@@ -75,18 +75,18 @@ form{
     opacity: 1;
   }
 
-  
+
 
 
   .container {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Two equal columns */
-    height: 2000px; /* Full viewport height */
+    grid-template-columns: 1fr 1fr; 
+    height: 2000px; 
     
 }
 
 .left, .right {
-    padding: 20px; /* Optional padding for content */
+    padding: 20px; 
     height: 2000px;
     
 }
@@ -115,8 +115,8 @@ form{
 }
 
 .filter-btn.active {
-  background-color: #007bff; /* Active state background */
-  color: white; /* Active state text color */
+  background-color: #007bff; 
+  color: white;
   border-color: #007bff;
 }
 
@@ -148,8 +148,8 @@ form{
 }
 
 ion-icon {
-  vertical-align: middle; /* Align icon with text */
-  margin-right: 5px; /* Space between icon and tooltip */
+  vertical-align: middle; 
+  margin-right: 5px; 
 }
 
 .resumeContainer {
@@ -157,14 +157,14 @@ ion-icon {
   border-bottom: 4px solid #e0e0e0;
   border-top: 4px solid #e0e0e0;
   
-  padding: 0px; /* Optional padding for internal sizing issues */
+  padding: 0px; 
 }
 
 .linkedResumeEntries {
   
   display: flex;
-  flex-direction: column; /* Arrange items in a column */
-  gap: 10px; /* Adjust gap between items */
+  flex-direction: column; 
+  gap: 10px;
 
 
   border-radius: 7px;
@@ -185,8 +185,8 @@ ion-icon {
 
 .heading {
   display: flex;
-  align-items: center; /* Align items vertically in the center */
-  gap: 10px; /* Space between date and title */
+  align-items: center; 
+  gap: 10px; 
 }
 #tkh{
   cursor: pointer;
@@ -194,11 +194,11 @@ ion-icon {
 }
 
 .date {
-  font-weight: normal; /* Adjust font weight as needed */
-  margin: 0; /* Remove default margin */
+  font-weight: normal; 
+  margin: 0; 
 }
 .description {
-  margin-left: 50; /* Remove default margin */
+  margin-left: 50; 
 }
 
 
@@ -223,9 +223,9 @@ ion-icon {
 }
 
 .container2 {
-    height: 4000px; /* Define the height of the container */
-    background: linear-gradient(to bottom,#191970, rgb(135, 206, 235)); /* Example gradient background */
-    overflow: auto; /* Add scrollbars if the content overflows */
+    height: 4000px; 
+    background: linear-gradient(to bottom,#191970, rgb(135, 206, 235)); 
+    overflow: auto; 
 }
 
 
@@ -243,14 +243,14 @@ ion-icon {
   @media only screen and (max-width: 1000px){
     .container {
       display: flex;
-      flex-direction: column; /* Stack items vertically */
+      flex-direction: column; 
   }
   .left {
-      order: 1; /* Ensures .left appears before .right */
+      order: 1; 
       position: absolute;
   }
   .right {
-      order: 2; /* Ensures .right appears after .left */
+      order: 2; 
       margin-left: 20px;
       margin-top: 300px;
   }

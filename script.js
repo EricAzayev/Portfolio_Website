@@ -83,13 +83,13 @@ document.getElementById('all').addEventListener('click', function() {
 });
 
 document.getElementById('linked').addEventListener('click', function() {
-    document.querySelector('.professionalEntries').style.display = 'none'; // Hide professional entries
-    document.querySelector('.resumeEntries').style.display = 'none'; // Hide resume entries
-    document.querySelector('.linkedResumeEntries').style.display = 'block'; // Show linked resume entries
+    document.querySelector('.professionalEntries').style.display = 'none'; 
+    document.querySelector('.resumeEntries').style.display = 'none'; 
+    document.querySelector('.linkedResumeEntries').style.display = 'block'; 
 });
 
 document.getElementById('featured').addEventListener('click', function() {
-    document.querySelector('.professionalEntries').style.display = 'none'; // Hide professional entries
-    document.querySelector('.linkedResumeEntries').style.display = 'none'; // Hide linked resume entries
-    document.querySelector('.resumeEntries').style.display = 'block'; // Show resume entries
+    document.querySelector('.professionalEntries').style.display = 'none'; 
+    document.querySelector('.linkedResumeEntries').style.display = 'none'; 
+    document.querySelector('.resumeEntries').style.display = 'block'; 
 });
