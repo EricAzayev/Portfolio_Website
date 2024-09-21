@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+html, body {
+    font-family: 'Roboto', sans-serif;
+
+    
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    color: white;
+    
+  }
+
+.dropdown-menu{
+  color: white;
+}
+.website-content{
+  height: 8000px; /* Define the height of the container */
+  background: linear-gradient(to bottom, #0f172a, #191970); /* Example gradient background */
+  
+}
+
+nav{
+  position: sticky;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#profile{
+  margin-top: 20px;
+  
+}
+form{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+  .tooltip-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltip {
+    visibility: hidden;
+    width: 200px; /* Adjust as needed */
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; /* Position above the icon */
+    left: 50%;
+    margin-left: -100px; /* Center the tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .tooltip::after {
+    content: "";
+    position: absolute;
+    top: 100%; /* Arrow at the bottom of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #333 transparent transparent transparent;
+  }
+  
+  .tooltip-container:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  
+
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    height: 2000px; /* Full viewport height */
+    
+}
+
+.left, .right {
+    padding: 20px; /* Optional padding for content */
+    height: 2000px;
+    
+}
+
+.filter-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+#profExperience{
+  margin-right: 10px;
+  margin-top: 0px;
+}
+
+#projExperience{
+  margin-top: 20px;
+}
+.filter-btn {
+  padding: 5px 12px;
+  font-size: 14px;
+
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.filter-btn.active {
+  background-color: #007bff; /* Active state background */
+  color: white; /* Active state text color */
+  border-color: #007bff;
+}
+
+.filter-btn:hover {
+  background-color: #e0e0e0;
+}
+
+
+.left-content{
+  position: fixed;
+  margin-right: 50%;
+  
+}
+.me{
+  object-fit: contain;
+
+}
+.rowContainer{
+  margin-top: 10px;
+
+  gap: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.gmail-icon:hover .tooltip-container {
+  visibility: visible;
+  opacity: 1; 
+}
+
+ion-icon {
+  vertical-align: middle; /* Align icon with text */
+  margin-right: 5px; /* Space between icon and tooltip */
+}
+
+.resumeContainer {
+  display: grid;
+  border-bottom: 4px solid #e0e0e0;
+  border-top: 4px solid #e0e0e0;
+  
+  padding: 0px; /* Optional padding for internal sizing issues */
+}
+
+.linkedResumeEntries {
+  
+  display: flex;
+  flex-direction: column; /* Arrange items in a column */
+  gap: 10px; /* Adjust gap between items */
+
+
+  border-radius: 7px;
+  cursor: pointer;
+  box-shadow:#111;
+  transition: all 0.3s ease-in-out;
+}
+
+.linkedResumeEntries:hover{
+  transform: translateY(-15px);
+  border-top: 4px solid #3b82f6;
+  border-bottom: 4px solid #3b82f6;
+
+}
+
+
+
+
+.heading {
+  display: flex;
+  align-items: center; /* Align items vertically in the center */
+  gap: 10px; /* Space between date and title */
+}
+#tkh{
+  cursor: pointer;
+
+}
+
+.date {
+  font-weight: normal; /* Adjust font weight as needed */
+  margin: 0; /* Remove default margin */
+}
+.description {
+  margin-left: 50; /* Remove default margin */
+}
+
+
+
+
+.github-icon{
+  font-size: 36px;
+  color:white;
+  margin-right: 20px;
+}
+
+.linkedin-icon{
+    font-size: 36px;
+    color:white;
+    margin-right: 20px;
+}
+
+.gmail-icon{
+  font-size: 36px;
+  color:white;
+  margin-right: 20px;
+}
+
+.container2 {
+    height: 4000px; /* Define the height of the container */
+    background: linear-gradient(to bottom,#191970, rgb(135, 206, 235)); /* Example gradient background */
+    overflow: auto; /* Add scrollbars if the content overflows */
+}
+
+
+
+    
+    
+
+  .icons a:hover{
+    background-color: #111;
+    transition: 0.5s;
+  }
+
+
+
+  @media only screen and (max-width: 1000px){
+    .container {
+      display: flex;
+      flex-direction: column; /* Stack items vertically */
+  }
+  .left {
+      order: 1; /* Ensures .left appears before .right */
+      position: absolute;
+  }
+  .right {
+      order: 2; /* Ensures .right appears after .left */
+      margin-left: 20px;
+      margin-top: 300px;
+  }
+}

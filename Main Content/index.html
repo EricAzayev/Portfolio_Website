@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Eric's Coding Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+  </head>
+
+
+  <body>
+    <div class="background-overlay"></div>
+    <div class="website-content">
+      <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #1e2a38;">
+        
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    VIP Access 😎    
+                </a>
+                <div class="dropdown-menu" id="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                </div>
+            </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Enter access code" aria-label="Search" id="accessCode">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="button" onclick="checkAccess()">Submit</button>
+            </form>
+        </div>
+    </nav>
+
+
+
+
+    <div class="container">
+
+      <div class="left">
+        <div class="left-content">
+        <br><br><br>
+        <h1>Eric Azayev</h1><br>
+        <h4>Software Engineer</h4><br>
+        <h5>I do Android and Web development, Mechatronics, and Minecraft modding for fun.</h5>
+        <div class="icons">
+        <a href="https://github.com/EricAzayev" class="github-icon" target="_blank">
+          <ion-icon name="logo-github"></ion-icon>
+        </a>
+        <a href="" class="linkedin-icon" target="_blank">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a>
+        <a href="mailto:azayeveric@gmail.com" class="gmail-icon" target="_blank">
+          <ion-icon name="mail-outline"></ion-icon>
+        </a>
+
+
+        </div>
+        </div>  <!--Left - Content-->
+      
+      </div>  <!--Left Div-->
+
+
+      <div class="right">
+         
+        <br><br><br>
+        <!--bootstrap carousel-->
+
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/myPicture.PNG" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Johnston Space Center</h5>
+                <p>I am really thankful to NASA SEES for inviting me to watch the Osiris-Rex reveal. I make it my mission to work with the incredible researchers at the station in my career.</p>
+              </div>
+            </div>
+            
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+        <!--end bootstrap carousel-->
+    
+
+        <h6 id="profile">This webpage is dedicated to the Software Development aspect of my professioonal experience. I am learning Computer Science because of its endless applications in the world.<br>Currently, I am focusing on Sofware Development by learning Front End, Android App Development and Minecraft Modding for fun.<br>
+        I am inspired by adventure and by the ability to help others, looking to develop content that inspires others to learn engineering and SWE.</h6>
+        
+        <div class="resumeContainer">
+          <div class="rowContainer">
+          <h4 id="profExperience">Professional Experience</h4>
+
+          <div class="filter-container">
+            <button class="filter-btn active" data-filter="all" id="all">All</button>
+            <button class="filter-btn" data-filter="linked-experiences" id="linked">Linked Experiences</button>
+            <button class="filter-btn" data-filter="featured-resume" id="featured">Featured on Resume</button>
+          </div>
+        </div> <!--Row Container-->
+
+        <!-- Professional Entries are not on resume and not linked-->
+         <!-- ResumeEntries are on Resume-->
+        <!--linkedResumeEntries -->
+        <!-- linkedEntries -->
+          
+
+          <div class="professionalEntries" id = "lspace">
+              
+            <div class="heading">
+                <!--<div class="tooltip-container">
+                  <ion-icon name="document-text-outline"></ion-icon>
+                  <span class="tooltip">This experience is featured on my resume</span>
+                </div> -->
+                <h6 class="date">9/24 - 12/24</h6>
+                <h5 class="title">NASA L'SPACE Mission Concept Academy</h5>
+            </div>
+            <p class="description">Starting Soon!</p>
+        </div> <!-- resumeEntries Div -->
+
+          
+          <div class="linkedResumeEntries" id="tkh" onClick="tkhFunction()">
+            
+              
+              <div class="heading" >
+                  <div class="tooltip-container">
+                    <ion-icon name="document-text-outline"></ion-icon>
+                    <span class="tooltip">This experience is featured on my resume</span>
+                  </div>
+                  <h6 class="date">07/24 - Present</h6>
+                  <h5 class="title">Karim Karbouch Coding Fellowship</h5>
+              </div>
+              <p class="description">Created this profile website and Time.ly Extension using HTML, CSS, and JS. Created a KenKen website for my morning commutes.</p>
+          
+            </div> <!-- resumeEntries Div -->
+        
+
+
+
+          <div class="resumeEntries">
+              
+            <div class="heading">
+                <h6 class="date">04/24-06/24</h6>
+                <h5 class="title">Protomatica Makerspace Internship</h5>
+            </div>
+            <p class="description">Created algorithms that fix six errors in a projection implementing the OpenCV library.
+              Learned version control and programming collaboration through Git, gained experience in Jupyter & Collab. 
+              Implemented CAD for capabling and camera fixers.
+              .</p>
+        </div> <!-- resumeEntries Div -->
+
+
+
+        <div class="resumeEntries">
+              
+          <div class="heading">
+              <div class="tooltip-container">
+                <ion-icon name="document-text-outline"></ion-icon>
+                <span class="tooltip">This experience is featured on my resume</span>
+              </div>
+              <h6 class="date">11/23 - 12/23</h6>
+              <h5 class="title">IEH Electronics Corporation</h5>
+          </div>
+          <p class="description">Engineering Intern - QA Department	
+            Utilized and programmed GD&T machinery to analyze manufacturing imperfections.	
+            Interpreted engineering sketches to verify part tolerances.
+            Operated micrometers, calipers, and soldering equipment for precise measurements and quality assurance.
+          </p>
+      </div> <!-- resumeEntries Div -->
+
+
+
+      <div class="linkedResumeEntries" id= "NASA">
+              
+        <div class="heading">
+            <div class="tooltip-container">
+              <ion-icon name="document-text-outline"></ion-icon>
+              <span class="tooltip">This experience is featured on my resume</span>
+            </div>
+            <h6 class="date">5/23 - 7/23</h6>
+            <h5 class="title">NASA Meteorite Research Internship</h5>
+        </div>
+        <p class="description">Meteorite Team Intern	Houston, Texas | 5/23 - 7/23
+          Applied earth science, astronomy, and Python knowledge by creating presentations and simulating data.	
+          Researched biology, physics, and geology to publish modern panspermia research.
+          Selected to meet Osiris Rex scientists at the Johnston Space Center, representing my internship peers.
+          </p>
+    </div> <!-- resumeEntries Div -->
+
+
+
+
+
+
+      </div> <!-- resumeContainer Div -->
+
+
+      <div class="projectContainer">
+
+
+        <div class="rowContainer">
+          <h4 id="projExperience">Featured Projects</h4>
+
+
+          <a href="mailto:example.email@gmail.com" class="gmail-icon" target="_blank" id="mail_icon">
+            
+            <div class="tooltip-container">
+              <ion-icon name="mail-outline"></ion-icon>
+              <span class="tooltip">Throw me a suggestion!</span>
+            </div>
+          </a>
+        </div> <!--Row Container-->
+
+        <div class="projectEntry">
+
+
+
+        </div> <!-- Project Entry -->
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+      </div> <!-- projectContainer end-->
+
+
+
+
+      </div> </div> <!-- projectContainer Div -->
+
+
+      </div> <!--Right Div-->
+
+
+      
+    </div>  <!--Container Div-->
+      
+      
+  </div>  <!--Content Div-->
+  
+  <script src="script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

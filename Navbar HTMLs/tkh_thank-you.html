@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fireworks Example</title>
+    <script src="https://cdn.jsdelivr.net/npm/fireworks-js/dist/fireworks.min.js"></script>
+    <style>
+        body{
+            background-color: #0f172a; 
+            color: white;
+        }
+        img {
+            width: 500px; /* Adjust as needed */
+            height: auto; /* Maintain aspect ratio */
+            margin: 0px; /* Add some spacing */
+        }
+    
+    
+    </style>
+
+
+
+
+</head>
+
+
+
+<body>
+    
+    <h1 id="Thank_You">Thank You</h1> <!-- Changed ID to remove spaces -->
+    <h2>Thank you for helping me start my Web Development journey.</h2>
+
+    <script>
+        // Initialize and start fireworks
+        const container = document.body;
+        const fireworks = new Fireworks(container, {
+            speed: 1,
+            acceleration: 100,
+            friction: 0.98,
+            gravity: 1.5,
+            particles: 100,
+            hue: {
+                min: 0,
+                max: 360
+            },
+            
+        });
+        fireworks.start();
+    </script>
+    <img src="notImportant.gif">
+    <h6>Me when HTML</h6>
+
+    <script>
+        // Update the h1 element with the current year and anniversary
+        document.addEventListener('DOMContentLoaded', (event) => {
+            let htag = document.getElementById("Thank_You");
+            let currentYear = new Date().getFullYear();
+            htag.innerHTML = "Thank you and happy " + (currentYear - 2014) + "th anniversary!";
+        });
+    </script>
+
+    <image href="notImportant.gif"></image>
+</body>
