@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
         ["Business Idea", "business_idea.html"],
         ["Business Wireframe", "Wireframe Image.PNG"],
         ["KenKen Project", "KenKen/Opening_Page.html"]
-    ];
+    ]//Double array
     const LFAM = []; 
 
     // Map search values to the respective lists
@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
         "NASA_OSTEM": OSTEM,
         "TKH_KKCF": KKCF,
         "L'FAM": LFAM
-    };
+    }; //hashmap
 
     userSearch.addEventListener('input', function() {
         const searchValue = userSearch.value.trim().toUpperCase();
@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
             dropdownMenu.appendChild(a); // Append the new item to the dropdown menu
         });
 
-        if (items.length === 0 && searchValue.length > 0) {
+        if (items.length === 0 && searchValue.length > 0) { //Where html updates are made
             //show a 'No results found' item
             const a = document.createElement('a');
             a.className = 'dropdown-item dynamic disabled';
