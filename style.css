@@ -104,7 +104,7 @@ form{
 
 .tooltip-container {
   position: relative;
-  display: inline-block;
+  
 }
 
 .tooltip {
@@ -234,20 +234,19 @@ ion-icon {
   padding: 0px; 
 }
 
-.linkedResumeEntries {
+.linkedEntries {
   
   display: flex;
   flex-direction: column; 
-  gap: 10px;
-
-
-  border-radius: 7px;
+  justify-content: center;
+  /*gap: 10px;*/
+  /*border-radius: 7px;*/
   cursor: pointer;
   box-shadow:#111;
   transition: all 0.3s ease-in-out;
 }
 
-.linkedResumeEntries:hover{
+.linkedEntries:hover{
   transform: translateY(-15px);
   border-top: 4px solid #3b82f6;
   border-bottom: 4px solid #3b82f6;
@@ -263,10 +262,19 @@ ion-icon {
   cursor: pointer;
 
 }
+.title{
+
+}
 
 .date {
-  font-weight: normal; 
-  margin: 0; 
+  
+ 
+  
+  display: flex;
+  
+  padding: 0;
+  color: white;
+  
 }
 .description {
   margin-left: 50; 

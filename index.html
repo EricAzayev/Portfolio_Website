@@ -118,19 +118,18 @@
           <h4 id="profExperience">Professional Experience</h4>
 
           <div class="filter-container">
-            <button class="filter-btn active" data-filter="all" id="all">All</button>
+            <button class="filter-btn active" data-filter="most-recent" id="featured">Most Recent</button>
             <button class="filter-btn" data-filter="linked-experiences" id="linked">Linked Experiences</button>
-            <button class="filter-btn" data-filter="featured-resume" id="featured">Featured on Resume</button>
+            <button class="filter-btn" data-filter="all" id="all">All</button>
           </div>
         </div> <!--Row Container-->
 
-        <!-- Professional Entries are not on resume and not linked-->
-         <!-- ResumeEntries are on Resume-->
-        <!--linkedResumeEntries -->
-        <!-- linkedEntries -->
+        <!-- Professional Entries GENERIC Entry-->
+        <!--linked:ResumeEntries OUTDATED, TBI into linkedEntries -->
+        <!-- linkedEntries TBImplemented--> 
           
 
-          <div class="professionalEntries" id = "lspace">
+          <div class="linkedEntries recentEntries" id = "lspace">
               
             <div class="heading">
                 <!--<div class="tooltip-container">
@@ -144,15 +143,13 @@
         </div> <!-- resumeEntries Div -->
 
           
-          <div class="linkedResumeEntries" id="tkh" onClick="tkhFunction()">
+          <div class="professionalEntries recentEntries" id="tkh" onClick="tkhFunction()">
             
               
               <div class="heading" >
-                  <div class="tooltip-container">
-                    <ion-icon name="document-text-outline"></ion-icon>
-                    <span class="tooltip">This experience is featured on my resume</span>
-                  </div>
-                  <h6 class="date">07/24 - Present</h6>
+                  
+                  <h6 class="date">
+                    07/24 - 10/24</h6>
                   <h5 class="title">Karim Karbouch Coding Fellowship</h5>
               </div>
               <p class="description">Created this profile website and Time.ly Extension using HTML, CSS, and JS. Created a KenKen website for my morning commutes.</p>
@@ -179,10 +176,6 @@
         <div class="resumeEntries">
               
           <div class="heading">
-              <div class="tooltip-container">
-                <ion-icon name="document-text-outline"></ion-icon>
-                <span class="tooltip">This experience is featured on my resume</span>
-              </div>
               <h6 class="date">11/23 - 12/23</h6>
               <h5 class="title">IEH Electronics Corporation</h5>
           </div>
@@ -195,13 +188,9 @@
 
 
 
-      <div class="linkedResumeEntries" id= "NASA">
+      <div class="resumeEntries" id= "NASA">
               
         <div class="heading">
-            <div class="tooltip-container">
-              <ion-icon name="document-text-outline"></ion-icon>
-              <span class="tooltip">This experience is featured on my resume</span>
-            </div>
             <h6 class="date">5/23 - 7/23</h6>
             <h5 class="title">NASA Meteorite Research Internship</h5>
         </div>
@@ -281,7 +270,8 @@
           <p class="description">
               <strong>Brot.ly:</strong> a study guide for people with low attention spans. <br>TTS, user styling, data transfer between fragments. <br>
               <strong>Catch&Log.ly:</strong> Frequently, social media use dilutes morning thoughts and expedites people to forget their dreams. My app encourages better use of time in the morning and night by giving users the benefits of journaling on a locally hosted platform. In the future, I plan to integrate or train my AI to create visual depictions of user-submitted notes.<br>
-          </p>
+              <strong>I will be revisiting this project soon to debug TTS with Async Programming</strong>
+            </p>
           <p class="tech-used">
               <strong>Skills:</strong>
               <ul>
@@ -320,25 +310,17 @@
       </div> 
     </div> <!-- projectContainer Div -->
 
-
+    
     <div id="minigame-bar">
       <div class = "row" id="row1">
         <div class = "column" id="column1"> <!--KenKen div-->
           <iframe src="https://ericazayev.github.io/KenKen"></iframe>
-
-
         </div> <!--column1 div-->
         <div class = "column" id="column2">
-
         </div> <!--column2 div-->
         <div class = "column" id="column3">
-
         </div> <!--column3 div-->
-
       </div> <!--Row1-->
-
-
-
     </div> <!--Minigame-bar div-->
 
 

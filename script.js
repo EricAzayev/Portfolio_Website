@@ -80,19 +80,19 @@ document.querySelectorAll('.filter-btn').forEach(button => {
 
 
 document.getElementById('all').addEventListener('click', function() {
-    document.querySelectorAll('.professionalEntries, .linkedResumeEntries, .resumeEntries').forEach(function(div) {
+    document.querySelectorAll('.professionalEntries, .linkedEntries, .recentEntries').forEach(function(div) {
         div.style.display = 'block'; // Show all
     });
 });
 
 document.getElementById('linked').addEventListener('click', function() {
     document.querySelector('.professionalEntries').style.display = 'none'; 
-    document.querySelector('.resumeEntries').style.display = 'none'; 
-    document.querySelector('.linkedResumeEntries').style.display = 'block'; 
+    document.querySelector('.recentEntries').style.display = 'none'; 
+    document.querySelector('.linkedEntries').style.display = 'block'; 
 });
 
-document.getElementById('featured').addEventListener('click', function() {
+document.getElementById('featured').addEventListener('click', function() { //Most Recent Button
     document.querySelector('.professionalEntries').style.display = 'none'; 
-    document.querySelector('.linkedResumeEntries').style.display = 'none'; 
-    document.querySelector('.resumeEntries').style.display = 'block'; 
+    document.querySelector('.linkedEntries').style.display = 'none'; 
+    document.querySelector('.recentEntries').style.display = 'block'; 
 });
